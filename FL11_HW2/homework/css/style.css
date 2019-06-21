@@ -1,8 +1,4 @@
-/*
-
-write your code here
-
-*/@media print {
+@media print {
 	body {
 		background-color: #ffffff;
 	}
