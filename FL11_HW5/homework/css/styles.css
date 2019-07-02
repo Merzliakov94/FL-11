@@ -1,0 +1,497 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+
+
+/*
+:root {
+  --bg-color--dark: #0b192f;
+  --bg-color--header: #162b4d;
+  --link: #fff;
+  --link--hover: #b8b8b8;
+  --bg-footer-color: #162b4d;;
+}
+*/
+
+body {
+	font-family: roboto;
+}
+
+.post-1 {
+	background: #B71757;
+}
+
+.post-2 {
+	background: #0D7E71;
+}
+
+.post-3 {
+	background: #b1660e;
+}
+
+.post-4 {
+	background: #d12767;
+}
+
+.post-5 {
+	background: #2d95bb;
+}
+
+
+/* Your styles go here */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/* Blog/News images URL */
+
+main .blog .post-img_1 {
+	background: url('../img/post1.jpg');
+}
+
+main .blog .post-img_2 {
+	background: url('../img/post2.jpg');
+}
+
+main .blog .post-img_3 {
+	background: url('../img/post3.jpg');
+}
+
+main .blog .post-img_4 {
+	background: url('../img/post4.jpg');
+}
+
+main .news .news-img_1 {
+	background: url('../img/news1.jpg');
+}
+
+main .news .news-img_2 {
+	background: url('../img/news2.jpg')
+}
+
+
+/* Hover effects */
+
+main .post-img_1 a:hover,
+.post-1:hover {
+	background-color: #B71757;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+main .post-img_2 a:hover,
+.post-2:hover {
+	background-color: #0D7E71;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+main .post-img_3 a:hover,
+.post-3:hover {
+	background-color: #b1660e;
+	;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+main .post-img_4 a:hover,
+.post-4:hover {
+	background-color: #d12767;
+	;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+main .post-5:hover {
+	background-color: #2d95bb;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+
+/* BURGER*/
+
+.burger {
+	display: none;
+	position: relative;
+}
+
+.burger span {
+	position: absolute;
+	display: block;
+	background-color: #fff;
+	width: 20px;
+	height: 2px;
+}
+
+.burger span::before {
+	content: '';
+	position: absolute;
+	display: block;
+	background-color: #fff;
+	width: 20px;
+	height: 2px;
+	top: 10px;
+}
+
+.burger span::after {
+	content: '';
+	position: absolute;
+	display: block;
+	background-color: #fff;
+	width: 20px;
+	height: 2px;
+	top: 20px;
+}
+
+body {
+	background-color: #0b192f;
+	color: #fff;
+	font-size: 16px;
+}
+
+.wrapper {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+
+/* Header > Logo/Menu */
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 116px;
+	background-color: #162b4d;
+}
+
+header .logo {
+	font-size: 2.4em;
+	font-weight: 100;
+	margin-left: 20px;
+	letter-spacing: -2px;
+}
+
+header .logo span {
+	color: #C0234C;
+}
+
+header .menu {
+	margin-right: 60px;
+}
+
+header .menu ul {
+	display: flex;
+}
+
+header .menu li {
+	font-size: 1.2em;
+	font-weight: 300;
+}
+
+header .menu li a {
+	padding: 46px 30px;
+}
+
+header .menu li a:hover {
+	background-color: #283d5f;
+}
+
+
+/* Main > Blog/news */
+
+main {
+	margin: 20px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+main .blog {
+	max-width: 75%;
+}
+
+main .news {
+	max-width: 25%;
+}
+
+main .blog .post-img,
+.post-info {
+	width: 50%;
+}
+
+main .blog .post {
+	display: flex;
+}
+
+main .blog .post-img {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+main .blog .post-img a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+main .blog .post-text {
+	padding: 40px 0 40px 30px;
+	max-width: 80%;
+}
+
+main .blog .post-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+main .blog .post-info h1 {
+	font-size: 2.6em;
+	font-weight: 300;
+}
+
+main .blog .post-info p {
+	margin: 30px 0;
+	font-weight: 100;
+	opacity: 0.7;
+}
+
+main .blog .date {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+	opacity: 0.5;
+	max-width: 20%;
+}
+
+main .blog .date .day {
+	font-size: 3em;
+	font-weight: 300;
+}
+
+main .blog .date .month {
+	font-size: 2em;
+	font-weight: 300;
+}
+
+main .blog .last-post {
+	width: 100%;
+}
+
+main .blog .last-post h1 {
+	width: 90%;
+}
+
+main .blog .last-post p {
+	width: 90%;
+	margin: 20px 0;
+}
+
+main .news {
+	padding-left: 20px;
+	color: #000;
+}
+
+main .first-news,
+.last-news {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+main .news .news-image {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 140px;
+}
+
+main .news .news-image a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+main .news .last-news {
+	margin: 20px 0;
+}
+
+main .news-info {
+	padding: 30px;
+}
+
+main .news h1 {
+	font-size: 2em;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+main .news p {
+	font-size: 1em;
+	font-weight: 100;
+	opacity: 0.9;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 116px;
+	background-color: #162b4d;
+	font-size: 1em;
+	font-weight: 100;
+}
+
+footer .copyright,
+.design {
+	opacity: 0.5;
+	padding: 0 30px;
+}
+
+main .news .first-news,
+.last-news {
+	cursor: pointer;
+}
+
+.post:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.post-2,
+.post-4 {
+	flex-direction: row-reverse;
+	text-align: right;
+}
+
+main .blog .post-2 .post-text,
+main .blog .post-4 .post-text {
+	padding: 40px 40px 40px 0;
+}
+
+@media screen and (max-width: 768px) {
+	.burger {
+		display: block;
+	}
+	header {
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		height: 200px;
+	}
+	header .menu {
+		display: none;
+	}
+	main .blog {
+		max-width: 60%;
+	}
+	main .news {
+		max-width: 40%;
+	}
+	main .post {
+		flex-direction: column;
+		align-items: stretch;
+	}
+	main .post-info {
+		flex-direction: column;
+		align-items: center;
+	}
+	main .blog .post-img,
+	.post-info {
+		width: 100%;
+	}
+	main .blog .post-img {
+		height: 400px;
+	}
+	main .blog .date {
+		top: 70%;
+		right: 43%;
+	}
+	main .blog .post-text h1,
+	main .blog .post-text p {
+		width: 100%;
+	}
+	footer {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.post:nth-child(even) {
+		flex-direction: column;
+	}
+	.post-2,
+	.post-4 {
+		flex-direction: row;
+		text-align: left;
+	}
+	main .blog .post-text {
+		padding: 40px 0 40px 30px;
+		max-width: 100%;
+	}
+	main .blog .post-text h1 {
+		max-width: 80%;
+	}
+	main .blog .post-2 .post-text,
+	main .blog .post-4 .post-text {
+		padding: 40px 40px 0 30px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	main {
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+	main .blog {
+		max-width: 100%;
+	}
+	main .news {
+		max-width: 100%;
+	}
+	main .news {
+		padding-left: 0;
+	}
+	main .blog .post-info h1 {
+		font-size: 2em;
+	}
+	main .blog .date .day {
+		font-size: 2em;
+		font-weight: 300;
+	}
+	main .blog .date .month {
+		font-size: 1.2em;
+		font-weight: 300;
+	}
+	main .news h1 {
+		font-size: 1.4em;
+		font-weight: 300;
+		margin-bottom: 20px;
+	}
+	main .news p {
+		font-size: 1em;
+		font-weight: 100;
+		opacity: 0.9;
+		width: 90%;
+	}
+	main .blog .post-text {
+		padding: 20px 0 20px 20px;
+		max-width: 100%;
+	}
+}
