@@ -1,4 +1,3 @@
-// Your code goes here
 const userEmail = 'user@gmail.com' ,
      adminEmail = 'admin@gmail.com' ,
        userPass = 'UserPass' ,
